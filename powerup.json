@@ -1,5 +1,4 @@
 {
-  "$schema": "https://developer.atlassian.com/cloud/trello/power-ups/powerup-schema.json",
   "name": "Epics & Themes (Coach Maximum)",
   "description": "Create epics, group by themes, find related cards, and see progress across boards.",
   "author": "Coach Maximum",
