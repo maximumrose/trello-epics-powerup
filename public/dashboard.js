@@ -1,6 +1,6 @@
 /* global TrelloPowerUp */
 const t = window.TrelloPowerUp.iframe();
-const API_BASE = 'https://YOUR_DOMAIN/api';
+const API_BASE = 'https://trello-epics-powerup.onrender.com/api';
 
 async function api(path) {
   const token = await t.loadSecret('trelloToken');

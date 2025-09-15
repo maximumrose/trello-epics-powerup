@@ -7,6 +7,26 @@ import { verify as verifyWebhook } from './webhook.js';
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use((req, res, next) => {
+  // allow Trello to iframe this page
+  res.removeHeader('X-Frame-Options');                // in case something sets it
+  res.setHeader('X-Frame-Options', 'ALLOWALL');       // dev-friendly; okay for your personal use
+
+  // Content Security Policy: allow Trello SDK and being framed by trello.com
+  res.setHeader(
+    'Content-Security-Policy',
+    [
+      "default-src 'self' https://p.trellocdn.com https://api.trello.com https://*.trello.com",
+      "script-src 'self' https://p.trellocdn.com 'unsafe-inline' 'unsafe-eval'",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src * data: blob:",
+      "connect-src 'self' https://api.trello.com https://*.trello.com",
+      "frame-ancestors https://*.trello.com"
+    ].join('; ')
+  );
+
+  next();
+});
 app.use(express.static('public'));
 
 function requireToken(req, res, next){

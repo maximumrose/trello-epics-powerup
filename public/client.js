@@ -3,7 +3,7 @@
 const Promise = window.TrelloPowerUp.Promise;
 const tpu = window.TrelloPowerUp.iframe();
 
-const API_BASE = 'https://YOUR_DOMAIN/api';
+const API_BASE = 'https://trello-epics-powerup.onrender.com/api';
 
 async function api(path, method = 'GET', body) {
   const token = await tpu.loadSecret('trelloToken');
@@ -43,7 +43,7 @@ window.TrelloPowerUp.initialize({
   'board-buttons': (t) => [
     {
       text: 'Themes & Progress',
-      icon: { dark: 'https://YOUR_DOMAIN/icon-dark.svg', light: 'https://YOUR_DOMAIN/icon-light.svg' },
+      icon: { dark: 'https://trello-epics-powerup.onrender.com/icon-dark.svg', light: 'https://trello-epics-powerup.onrender.com/icon-light.svg' },
       callback: (t) => t.boardBar({ url: './dashboard.html', height: 520, title: 'Themes & Cross‑Board Progress' })
     },
     {
@@ -121,7 +121,7 @@ window.TrelloPowerUp.initialize({
     if (/https:\/\/trello.com\/c\//.test(url)) {
       return [{
         claimed: [url],
-        icon: 'https://YOUR_DOMAIN/icon-light.svg',
+        icon: 'https://trello-epics-powerup.onrender.com/icon-light.svg',
         title: 'Link as Related Card',
         content: {
           type: 'iframe',
