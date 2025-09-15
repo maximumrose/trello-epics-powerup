@@ -17,20 +17,20 @@
   ],
   "connectors": {
     "iframe": {
-      "url": "https://YOUR_DOMAIN/index.html"
+      "url": "https://trello-epics-powerup.onrender.com/index.html"
     }
   },
   "icons": {
     "dark": {
-      "icon": "https://YOUR_DOMAIN/icon-dark.svg"
+      "icon": "https://trello-epics-powerup.onrender.com/icon-dark.svg"
     },
     "light": {
-      "icon": "https://YOUR_DOMAIN/icon-light.svg"
+      "icon": "https://trello-epics-powerup.onrender.com/icon-light.svg"
     }
   },
   "scopes": ["read", "write"],
   "domains": ["YOUR_DOMAIN"],
-  "privacyPolicyUrl": "https://YOUR_DOMAIN/privacy",
-  "termsOfUseUrl": "https://YOUR_DOMAIN/terms",
+  "privacyPolicyUrl": "https://trello-epics-powerup.onrender.com/privacy",
+  "termsOfUseUrl": "https://trello-epics-powerup.onrender.com/terms",
   "defaultLocale": "en"
 }
