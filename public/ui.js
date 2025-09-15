@@ -1,6 +1,4 @@
 /* global TrelloPowerUp */
-const t = window.TrelloPowerUp.iframe();
-console.log('[PU] ui iframe loaded, hash=', window.location.hash);
-
-// your previous router & handlers (auth, new-theme, select-parent, add-child, etc.)
-// NOTE: replace references from "tpu" to "t" if you had that earlier
+const t = TrelloPowerUp.iframe();
+const root = document.getElementById('root');
+root.innerHTML = '<div class="container"><h3>UI Ready</h3></div>';
