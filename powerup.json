@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.atlassian.com/cloud/trello/power-ups/powerup-schema.json",
+  "name": "Epics & Themes (Coach Maximum)",
+  "description": "Create epics, group by themes, find related cards, and see progress across boards.",
+  "author": "Coach Maximum",
+  "capabilities": [
+    "board-buttons",
+    "card-buttons",
+    "card-badges",
+    "card-detail-badges",
+    "show-authorization",
+    "authorization-status",
+    "list-actions",
+    "attachment-sections",
+    "format-url",
+    "settings"
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "https://YOUR_DOMAIN/index.html"
+    }
+  },
+  "icons": {
+    "dark": {
+      "icon": "https://YOUR_DOMAIN/icon-dark.svg"
+    },
+    "light": {
+      "icon": "https://YOUR_DOMAIN/icon-light.svg"
+    }
+  },
+  "scopes": ["read", "write"],
+  "domains": ["YOUR_DOMAIN"],
+  "privacyPolicyUrl": "https://YOUR_DOMAIN/privacy",
+  "termsOfUseUrl": "https://YOUR_DOMAIN/terms",
+  "defaultLocale": "en"
+}

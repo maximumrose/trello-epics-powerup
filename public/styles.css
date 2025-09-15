@@ -1,0 +1,10 @@
+:root { --fg:#0f172a; --muted:#64748b; --line:#e2e8f0; --accent:#2563eb; }
+html,body{margin:0;font:14px/1.4 system-ui, -apple-system, Segoe UI, Roboto; color:var(--fg)}
+.container{padding:16px; max-width:840px; margin:0 auto}
+.row{display:flex; gap:12px; align-items:center}
+.btn{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.badge{display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted)}
+.kv{display:grid; grid-template-columns:120px 1fr; gap:6px 12px; margin:10px 0}
+input, select{padding:8px;border:1px solid var(--line);border-radius:8px;width:100%}
+small{color:var(--muted)}

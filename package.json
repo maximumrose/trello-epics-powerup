@@ -1,0 +1,15 @@
+{
+  "name": "trello-epics-powerup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "db:reset": "rm -f data.db && node -e \"require('fs').writeFileSync('data.db','')\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}
